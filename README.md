@@ -3,7 +3,7 @@ The dataset "IMDB Dataset.csv" is too heavy to be downloaded to github repositor
 It needs to be added in the same folder, as the notebook, to run it correctly.
 
 
-# 📘 Project Overview: Text Analysis of Song Lyrics Using NLP
+# Project Overview: Text Analysis of Song Lyrics and IMDB reviews Using NLP methods
 
 This project explores **Natural Language Processing (NLP)** techniques applied to a small dataset of song lyrics. The goal is to compare different text‑representation methods, visualize their structure, and extract meaningful patterns from the vocabulary and semantics of the songs. The second part of the project consists in training BERT classifier to perform sentiment analysis for dataset of IMDB movies reviews
 
@@ -23,8 +23,8 @@ The project demonstrates how various vectorization and embedding models interpre
 - Explore word frequencies, bigram patterns, and semantic similarity  
 - Build intuitive visualizations such as heatmaps, t‑SNE plots, and word clouds
 - clean and tokenize the dataset of IMDB movies reviews
-- Construct embeddings of tokens
-- Train BERT classifier on resulting tokens to perform sentiment analysis for IMDB movies reviews
+- Construct embeddings of tokens form BertTokenizer
+- Train BERT classifier on resulting tokens for 5 epochs to perform sentiment analysis for IMDB movies reviews
 
 ---
 
@@ -80,8 +80,6 @@ t‑SNE is applied to:
 - CountVectorizer word vectors  
 - Word2Vec embeddings  
 
-This reveals clusters of words that appear in similar contexts or share semantic meaning.
-
 ---
 
 ### **2. Heatmaps**
@@ -89,8 +87,6 @@ Heatmaps are generated for:
 - CountVectorizer matrix  
 - TF‑IDF matrix  
 - Word2Vec average song embeddings  
-
-These show how each model represents the songs in feature space.
 
 ---
 
@@ -130,6 +126,11 @@ Using cosine similarity and Word2Vec’s similarity search, the project identifi
 
 ---
 
+## BERT classifier
+
+- clean reviews by removing .html tags
+- 
+
 ## 🛠 Technologies Used
 
 - Python  
@@ -137,4 +138,5 @@ Using cosine similarity and Word2Vec’s similarity search, the project identifi
 - Scikit‑learn  
 - Gensim  
 - Matplotlib, Seaborn  
-- WordCloud  
+- WordCloud
+- Pytorch
