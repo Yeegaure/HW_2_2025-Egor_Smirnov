@@ -128,10 +128,22 @@ Using cosine similarity and Word2Vec’s similarity search, the project identifi
 
 ## BERT classifier
 
+### Tokenize text
 - clean reviews by removing .html tags
-- 
+- lowercase all words
+- remove punctunation and special symbols like '\n'
+- remove stopwords
+- tokenize using BertTokenizer
 
-## 🛠 Technologies Used
+### BERT model
+- split data by train and vaidation datasets
+- BERT classifier model on GPU
+- train for 5 epochs (use free google colab GPUs)
+- optimizer - Adam
+- loss - CrossEntropyLoss()
+- evaluate classficication quality on train and validation datasets with accuracy, precision, recall and F1-score metrics
+
+## Technologies Used
 
 - Python  
 - NumPy, Pandas  
@@ -139,4 +151,5 @@ Using cosine similarity and Word2Vec’s similarity search, the project identifi
 - Gensim  
 - Matplotlib, Seaborn  
 - WordCloud
+- nltk
 - Pytorch
